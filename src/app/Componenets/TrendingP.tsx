@@ -1,7 +1,7 @@
+import { FaStar } from 'react-icons/fa';
 
 
-import Link from "next/link";
-import { ArrowRight, ArrowLeft, Star, Eye, Heart } from "lucide-react";
+
 
 function Sales() {
   const products = [
@@ -118,8 +118,8 @@ function Sales() {
                 {items.off}
               </div>
               <div className="absolute flex flex-col gap-4 font-poppins top-3 right-2">
-                <Heart size={40} className="rounded-full py-2 px-2 " />
-                <Eye size={40} className="rounded-full py-2 px-2 " />
+                {/* <FaHeart size={40} className="rounded-full py-2 px-2 " />
+                <Eye size={40} className="rounded-full py-2 px-2 " /> */}
               </div>
               <img
                 src={items.imgSrc}
@@ -137,10 +137,10 @@ function Sales() {
                   </p>
                 </div>
                 <div className="flex gap-2 items-center justify-center">
-                  <Star size={15} className="text-yellow-400" />
-                  <Star size={15} className="text-yellow-400" />
-                  <Star size={15} className="text-yellow-400" />
-                  <Star size={15} className="text-yellow-400" />
+                  <FaStar size={15} className="text-yellow-400" />
+                  <FaStar size={15} className="text-yellow-400" />
+                  <FaStar size={15} className="text-yellow-400" />
+                  <FaStar size={15} className="text-yellow-400" />
                   <span>{`(${items.reviews})`}</span>
                 </div>
               </div>
