@@ -4,7 +4,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Navbar from "./components/NavBar"; // Corrected typo from "Componenets" to "Components"
+import Navbar from "./Componenets/NavBar";
+
 
 // Load custom fonts with variable definitions for easy reference in CSS
 const geistSans = localFont({
@@ -51,10 +52,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 text-gray-900`}
       >
         <Header />
-        <Navbar /> {/* Added Navbar component */}
+        <Navbar /> {/* Ensure the Navbar component is correctly placed */}
         {children}
         <Footer />
       </body>
     </html>
   );
 }
+
