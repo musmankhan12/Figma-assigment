@@ -1,25 +1,13 @@
+// RootLayout.tsx (or layout.tsx)
+
 import { Metadata } from "next";
-import localFont from "next/font/local";
-import "./globals.css";
+import "./globals.css"; // Import global CSS for fonts
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Navbar from "./Componenets/NavBar";
 
 
-// Load custom fonts with variable definitions for easy reference in CSS
-const geistSans = localFont({
-  src: "/fonts/GeistVF.woff",  // Adjust the path to start from /public/
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-
-const geistMono = localFont({
-  src: "/fonts/GeistMonoVF.woff",  // Adjust the path to start from /public/
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
-
-// Set up metadata for SEO and accessibility
+// Metadata for SEO
 export const metadata: Metadata = {
   title: "Responsive Design Website",
   description: "A modern and responsive website built with Next.js.",
@@ -31,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-// Set up viewport separately
+// Set up viewport
 export const generateViewport = () => ({
   width: "device-width",
   initialScale: 1,
@@ -43,9 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 text-gray-900`}
-      >
+      <body className="antialiased bg-gray-50 text-gray-900 font-sans">  {/* Apply the custom font via Tailwind CSS */}
         <Header />
         <Navbar />
         {children}
@@ -54,4 +40,3 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
-

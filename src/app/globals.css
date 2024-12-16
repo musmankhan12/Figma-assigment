@@ -1,51 +1,57 @@
+/* globals.css */
+
+/* Tailwind Base, Components, and Utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-<<<<<<< HEAD
-/* globals.css */
+
+/* Custom CSS */
+
+/* Flexbox container for layout */
 .container {
-    display: flex;
-    flex-direction: column; /* Stacks elements vertically */
-    align-items: center;
-    padding: 1rem;
+  display: flex;
+  flex-direction: column; /* Stacks elements vertically */
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; /* Switches to horizontal layout on larger screens */
   }
-  
-  @media (min-width: 768px) {
-    .container {
-      flex-direction: row; /* Switches to horizontal layout on larger screens */
-    }
-  }
-  /* globals.css */
+}
+
+/* Media query for smaller screens */
 @media (max-width: 768px) {
-    .header {
-      font-size: 1.2rem;
-    }
-    .container {
-      padding: 0.5rem;
-    }
+  .header {
+    font-size: 1.2rem; /* Smaller font size for headers on mobile */
   }
-  
-=======
+  .container {
+    padding: 0.5rem; /* Smaller padding for mobile */
+  }
+}
 
-
+/* Custom Font Families */
 :root {
-  --poppins: 'Poppins', sans-serif;
-  --nunito: 'Nunito', sans-serif;
-  --jost: 'Jost', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-nunito: 'Nunito', sans-serif;
+  --font-jost: 'Jost', sans-serif;
+  --font-geist-sans: 'Geist Sans', sans-serif;
+  --font-geist-mono: 'Geist Mono', monospace;
 }
 
+/* Global body settings */
 body {
-  font-family: var(--font-jost);
+  font-family: var(--font-jost); /* Default font family */
 }
 
-.poppins-text {
-  font-family: var(--font-poppins);
+/* Header font family */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-geist-mono); /* Geist Mono for headers */
 }
 
-.nunito-text {
-  font-family: var(--font-nunito);
-}
-
+/* Tailwind Theming and Custom Variables */
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -74,6 +80,8 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
+  /* Dark Mode theme */
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -102,6 +110,7 @@ body {
   }
 }
 
+/* Apply base styles using Tailwind */
 @layer base {
   * {
     @apply border-border;
@@ -111,4 +120,11 @@ body {
   }
 }
 
->>>>>>> 26367630ef3993fba7625d24c122e2f3af5be0fd
+/* Font family classes */
+.font-geist-sans {
+  font-family: var(--font-geist-sans);
+}
+
+.font-geist-mono {
+  font-family: var(--font-geist-mono);
+}

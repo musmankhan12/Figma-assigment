@@ -3,7 +3,7 @@ import React from "react";
 const blogPosts = [
   {
     id: 1,
-    author: "SaberAli",
+    author: "M Usman",
     date: "21 August,2020",
     title: "Top essential Trends in 2021",
     description: "More of this less hello samlande lied much over tightly circa horse taped mightly",
@@ -11,7 +11,7 @@ const blogPosts = [
   },
   {
     id: 2,
-    author: "Surfuxion",
+    author: "M Usman",
     date: "21 August,2020",
     title: "Top essential Trends in 2021",
     description: "More of this less hello samlande lied much over tightly circa horse taped mightly",
@@ -19,7 +19,7 @@ const blogPosts = [
   },
   {
     id: 3,
-    author: "SaberAli",
+    author: "M Usman",
     date: "21 August,2020",
     title: "Top essential Trends in 2021",
     description: "More of this less hello samlande lied much over tightly circa horse taped mightly",
