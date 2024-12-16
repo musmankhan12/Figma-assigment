@@ -1,9 +1,9 @@
 {
-<<<<<<< HEAD
   "root": true,
   "extends": [
     "next",
-    "next/core-web-vitals"
+    "next/core-web-vitals",
+    "next/typescript"
   ],
   "rules": {
     "react/react-in-jsx-scope": "off",
@@ -13,8 +13,3 @@
     "react/no-unescaped-entities": "off"
   }
 }
-
-=======
-  "extends": ["next/core-web-vitals", "next/typescript"]
-}
->>>>>>> 26367630ef3993fba7625d24c122e2f3af5be0fd
