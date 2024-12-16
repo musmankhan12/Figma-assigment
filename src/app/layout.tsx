@@ -1,5 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import type { Metadata } from "next";
+import { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./components/Header";
@@ -9,13 +8,13 @@ import Navbar from "./Componenets/NavBar";
 
 // Load custom fonts with variable definitions for easy reference in CSS
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+  src: "/fonts/GeistVF.woff",  // Adjust the path to start from /public/
   variable: "--font-geist-sans",
   weight: "100 900",
 });
 
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+  src: "/fonts/GeistMonoVF.woff",  // Adjust the path to start from /public/
   variable: "--font-geist-mono",
   weight: "100 900",
 });
@@ -38,11 +37,7 @@ export const generateViewport = () => ({
   initialScale: 1,
 });
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
@@ -52,7 +47,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 text-gray-900`}
       >
         <Header />
-        <Navbar /> {/* Ensure the Navbar component is correctly placed */}
+        <Navbar />
         {children}
         <Footer />
       </body>

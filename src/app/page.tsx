@@ -1,52 +1,28 @@
-<<<<<<< HEAD
-'use lient'
+'use client';
 
-
-import Hero from "./components/Hero";
-
-import TopCategories from "./components/TopCategories";
-import LatestProducts from "./components/LatestProducts";
-import Feature from "./components/FeatureProduct";
-import Offers from "./components/Offers";
-import Unique from "./components/Unique";
-import TrendingProducts from "./components/TrendingProducts";
-import Discount from "./components/Discount";
-import BlogSection from "./components/BlogSection";
-import Newslater from "./components/Newslater";
-
-function Homepage(){
-  return(
-    <div>
-   
-      <Hero />
-      <Feature />
-      <LatestProducts />
-      <Offers />
-      <Unique />
-      <TrendingProducts />
-      <Discount />
-      <TopCategories />
-      <Newslater />
-      <BlogSection />
-   
-=======
-import React from 'react'
-import Hero from './Componenets/Hero'
-import FeaturedP from './Componenets/FeaturedP'
-import LatestP from './Componenets/LatestP'
-import Service from './Componenets/Service'
-import Product from './Componenets/Product'
-import TrendingP from './Componenets/TrendingP'
-import Discount from './Componenets/Discount'
-import Topcate from './Componenets/Topcate'
+import Hero from './components/Hero';
+import FeaturedP from './components/FeatureProduct';
+import LatestP from './components/LatestProducts';
+import Service from './components/Offers';
+import Product from './components/FeatureProduct';
+import TrendingP from './components/TrendingProducts';
+import Discount from './components/Discount';
+import Topcate from './components/TopCategories';
 import LatestB from './Componenets/LatestB'
-import Picshop from './Componenets/picshop'
+import Picshop from './Componenets/picshop';
+import TopCategories from './components/TopCategories';
+import LatestProducts from './components/LatestProducts';
+import Feature from './components/FeatureProduct';
+import Offers from './components/Offers';
+import Unique from './components/Unique';
+import TrendingProducts from './components/TrendingProducts';
+import BlogSection from './components/BlogSection';
+import Newslater from './components/Newslater';
 
 const Home = () => {
   return (
     <div>
       <Hero />
-
       <FeaturedP />
       <LatestP />
       <Service />
@@ -56,14 +32,18 @@ const Home = () => {
       <Topcate />
       <Picshop />
       <LatestB />
-      
->>>>>>> 26367630ef3993fba7625d24c122e2f3af5be0fd
+      <Feature />
+      <LatestProducts />
+      <Offers />
+      <Unique />
+      <TrendingProducts />
+      <Discount />
+      <TopCategories />
+      <Newslater />
+      <BlogSection />
     </div>
-  )
+  );
 }
 
-<<<<<<< HEAD
-export default Homepage;
-=======
-export default Home
->>>>>>> 26367630ef3993fba7625d24c122e2f3af5be0fd
+export default Home;
+
